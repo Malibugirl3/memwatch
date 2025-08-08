@@ -3,7 +3,7 @@ import time
 import gc
 import subprocess
 from typing import List, Dict, Tuple
-from config import (
+from config.default_config import (
     SYSTEM_CRITICAL, OFFICE_WHITELIST, GAME_WHITELIST, 
     MEMORY_THRESHOLD, SAFE_CLEANUP_CONFIG
 )

@@ -1,0 +1,28 @@
+memwatch/
+├── main.py                 # 入口文件
+├── requirements.txt        
+├── setup.py               # 安装配置
+├── config/                # 配置管理
+│   ├── __init__.py
+│   ├── default_config.py  # 默认配置
+│   └── config_manager.py  # 配置加载/保存
+├── core/                  # 核心功能
+│   ├── __init__.py
+│   ├── monitor.py         # 系统监控
+│   ├── cleaner.py         # 内存清理
+│   └── scheduler.py       # 托管调度器
+├── ui/                    # 用户界面
+│   ├── __init__.py
+│   ├── main_window.py     # 主窗口
+│   ├── config_dialog.py   # 配置对话框
+│   └── tray_icon.py       # 托盘图标
+├── utils/                 # 工具模块
+│   ├── __init__.py
+│   ├── system_utils.py    # 系统相关工具
+│   └── install_helper.py  # 安装助手
+├── data/                  # 数据文件
+│   ├── user_config.json   # 用户配置
+│   └── logs/              # 日志目录
+└── docs/                  # 文档
+    ├── README.md
+    └── 设计文档/

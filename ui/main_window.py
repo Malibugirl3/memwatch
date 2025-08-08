@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import psutil
-from cleaner_safe import clean_memory  # 使用安全的清理模块
-from monitor_realtime import SystemMonitor  # 导入我们的监控系统
+from core.cleaner_safe import clean_memory  # 使用安全的清理模块
+from core.monitor_realtime import SystemMonitor  # 导入我们的监控系统
 import threading
 import time
 

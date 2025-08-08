@@ -1,6 +1,6 @@
 # cleaner.py
 import psutil
-from config import WHITELIST, GAMELIST, MEMORY_THRESHOLD
+from config.default_config import WHITELIST, GAMELIST, MEMORY_THRESHOLD
 
 def clean_memory(mode='office'):
     """

@@ -1,5 +1,5 @@
-from monitor import show_system_status
-from cleaner_safe import clean_memory
+from core.monitor import show_system_status
+from core.cleaner_safe import clean_memory
 
 def run_memwatch():
     mode = input("请选择模式 (office/game): ").strip().lower()

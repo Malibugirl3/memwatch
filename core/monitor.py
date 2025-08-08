@@ -69,7 +69,7 @@ def display_system_status():
     print(f"[green]CPU 使用率: [/green]{cpu}%")
 
     mem = get_memory_info()
-    print(f"[green]内存使用率: [/green]{cpu}%")
+    print(f"[green]内存使用率: [/green]{mem['percent']}%")
     print(f"总内存: {mem['total'] / 1024 / 1024:.2f} GB")
     print(f"已用内存: {mem['used'] / 1024 / 1024:.2f} GB")
     print(f"可用内存: {mem['available'] / 1024 / 1024:.2f} GB")
@@ -86,7 +86,7 @@ def display_system_status():
     for proc in get_top_processes():
         table.add_row(
             str(proc['pid']),
-            proc["name"][:25] if proc["name"] else "Unknown"
+            proc["name"][:25] if proc["name"] else "Unknown",
             f'{proc["cpu_percent"]:.1f}',
             f'{proc["memory_percent"]:.1f}'
         )
