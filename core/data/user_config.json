@@ -1,0 +1,93 @@
+{
+  "thresholds": {
+    "office": 75.0,
+    "game": 80.0,
+    "auto": 85.0
+  },
+  "scheduler": {
+    "interval_minutes": 5,
+    "enabled": false,
+    "smart_mode": true
+  },
+  "whitelist": {
+    "office": [
+      "chrome.exe",
+      "msedge.exe",
+      "firefox.exe",
+      "idea64.exe",
+      "pycharm64.exe",
+      "Cursor.exe",
+      "code.exe",
+      "WINWORD.EXE",
+      "EXCEL.EXE",
+      "POWERPNT.EXE",
+      "OUTLOOK.EXE",
+      "QQ.exe",
+      "WeChat.exe",
+      "DingTalk.exe",
+      "TIM.exe",
+      "QQMusic.exe",
+      "netease.exe",
+      "163MusicDesktop.exe",
+      "Notepad.exe",
+      "notepad++.exe",
+      "typora.exe",
+      "kazumi.exe",
+      "PotPlayerMini64.exe"
+    ],
+    "game": [
+      "valorant.exe",
+      "cs2.exe",
+      "genshinimpact.exe",
+      "starrail.exe",
+      "steam.exe",
+      "epicgameslauncher.exe",
+      "riotclientservices.exe",
+      "GameBar.exe",
+      "GameBarFTServer.exe",
+      "XboxGameBar.exe",
+      "Discord.exe",
+      "TeamSpeak3.exe",
+      "YY.exe",
+      "obs64.exe",
+      "XSplit.Broadcaster.exe",
+      "chrome.exe",
+      "msedge.exe"
+    ],
+    "system_critical": [
+      "System",
+      "System Idle Process",
+      "smss.exe",
+      "csrss.exe",
+      "wininit.exe",
+      "winlogon.exe",
+      "services.exe",
+      "lsass.exe",
+      "svchost.exe",
+      "explorer.exe",
+      "dwm.exe",
+      "audiodg.exe",
+      "conhost.exe",
+      "spoolsv.exe",
+      "taskhostw.exe",
+      "RuntimeBroker.exe",
+      "WmiPrvSE.exe",
+      "SearchIndexer.exe",
+      "MsMpEng.exe",
+      "NisSrv.exe",
+      "SecurityHealthService.exe",
+      "SystemSettings.exe"
+    ]
+  },
+  "cleanup": {
+    "max_processes_per_batch": 3,
+    "cleanup_interval": 2.0,
+    "memory_limit_mb": 100,
+    "cpu_limit_percent": 50.0
+  },
+  "ui": {
+    "notification_duration": 5,
+    "minimize_to_tray": true,
+    "start_minimized": false
+  }
+}
